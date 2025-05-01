@@ -23,6 +23,24 @@ Open a new terminal window and run:
 brew install python@3.12
 ```
 
+To make sure your shell uses Python 3.12 by default, you’ll need to update your shell profile (e.g., .zshrc, .bash_profile, etc.):
+``` sh
+echo 'export PATH="/opt/homebrew/opt/python@3.12/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+Alternatively, you can download the Python 3.12 installer directly from the [official Python website](https://www.python.org/downloads/mac-osx/).
+
+To verify your Python installation is complete, run: 
+``` sh
+python3 --version
+```
+
+You should see a response that looks something like this:
+``` sh
+Python 3.12.x
+```
+
 ## 2. Creating a Virtual Environment
 
 Once Python is installed, you can create a virtual environment by running:
