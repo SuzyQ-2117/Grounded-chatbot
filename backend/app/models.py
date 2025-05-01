@@ -11,4 +11,4 @@ class AskRequest(BaseModel):
 
 # expects a JSON body with a string called "answer"
 class AskResponse(BaseModel): 
-    answser: str
+    answer: str
