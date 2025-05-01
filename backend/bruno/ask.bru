@@ -1,0 +1,19 @@
+meta {
+  name: /ask
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/ask
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {"question":"How are you?"}
+}
