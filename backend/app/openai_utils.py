@@ -11,6 +11,13 @@ from app.config import OPENAI_API_KEY
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 def generate_answer(question: str, wiki_context: str) -> str:
+    # Fallback if the wiki_context is empty or contains junk data
+    if not wiki_context.strip() or wiki_context.strip().lower() in [
+        "no wiki data found.",
+        "no readable wiki paragraph found."
+    ]:
+        return "Sorry, I couldn’t find any relevant wiki info for that."
+
     system_prompt = (
         "You are an expert on the game *Grounded*. Answer the user's questions "
         "based only on the wiki data provided. Keep your responses concise, ideally "
