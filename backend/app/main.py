@@ -10,6 +10,7 @@ from fastapi import Query
 
 from app.models import AskRequest, AskResponse
 from app.wiki import get_page_extract
+from app.openai_utils import generate_answer
 
 app = FastAPI()
 app.add_middleware(
@@ -21,6 +22,7 @@ app.add_middleware(
 )
 
 @app.get("/ask", response_model=AskResponse)
-def ask_question(question: str = Query(..., description="The wiki page title to search")):
+def ask_question(question: str = Query(...)):
     context = get_page_extract(question.title())
-    return AskResponse(answer=f"Wiki says: {context}")
+    gpt_response = generate_answer(question, context)
+    return AskResponse(answer=gpt_response)

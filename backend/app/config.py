@@ -10,3 +10,4 @@ from dotenv import load_dotenv
 load_dotenv()
 
 WIKI_API_URL = os.getenv("WIKI_API_URL")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
