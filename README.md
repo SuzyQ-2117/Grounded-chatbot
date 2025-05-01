@@ -16,7 +16,7 @@ A starter project that uses an LLM to scrape/assess the Fandom wiki pages for th
 
 I'm developing on a MacBook so I've only included instructions for installing and configuring Python 3.12 in MacOS.
 
-This guide assumes you have installed Homebrew. If you do not have Homebrew installed, [check here]() for how to get this installed.
+This guide assumes you have installed Homebrew. If you do not have Homebrew installed, [check the Homebrew website here](https://brew.sh/) for more info.
 
 Open a new terminal window and run:
 ``` sh
