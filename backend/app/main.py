@@ -6,6 +6,8 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import Query
+
 from app.models import AskRequest, AskResponse
 from app.wiki import get_page_extract
 
@@ -19,6 +21,6 @@ app.add_middleware(
 )
 
 @app.get("/ask", response_model=AskResponse)
-def ask_question(data: AskRequest):
-    context = get_page_extract(data.question.title())
+def ask_question(question: str = Query(..., description="The wiki page title to search")):
+    context = get_page_extract(question.title())
     return AskResponse(answer=f"Wiki says: {context}")
