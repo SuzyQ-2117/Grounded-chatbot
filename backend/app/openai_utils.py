@@ -12,20 +12,21 @@ client = OpenAI(api_key=OPENAI_API_KEY)
 
 def generate_answer(question: str, wiki_context: str) -> str:
     system_prompt = (
-        "You are a helpful assistant who uses wiki information to answer user questions "
-        "about the game Grounded. Use the provided context to respond clearly and concisely."
+        "You are an expert on the game *Grounded*. Answer the user's questions "
+        "based only on the wiki data provided. Keep your responses concise, ideally "
+        "under 2-3 sentences unless more detail is explicitly requested."
     )
 
     user_message = f"Context:\n{wiki_context}\n\nQuestion:\n{question}"
 
     response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_message}
         ],
         temperature=0.7,
-        max_tokens=300
+        max_tokens=200
     )
 
     return response.choices[0].message.content.strip()
