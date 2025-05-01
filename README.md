@@ -53,7 +53,7 @@ You'll need to activate this by running:
 source <venv-name>/bin/activate
 ```
 
-Once your virtual environment is activated, you should see `(venv)` at the beginning or your terminal line (or whatever you named your  environment if you not using `venv` specifically). The .gitignore file will automatically exclude virtual environments that are called `venv`.
+Once your virtual environment is activated, you should see `(venv)` at the beginning or your terminal line (or whatever you named your  environment if you're not using `venv` specifically). The .gitignore file will automatically exclude virtual environments that are called `venv`.
 
 You can exit the virtual environment by running: 
 ``` sh 
