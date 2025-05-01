@@ -7,6 +7,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.models import AskRequest, AskResponse
+from app.wiki import get_page_extract
 
 app = FastAPI()
 app.add_middleware(
@@ -17,6 +18,7 @@ app.add_middleware(
     allow_headers=['*']
 )
 
-@app.post("/ask", response_model=AskResponse)
+@app.get("/ask", response_model=AskResponse)
 def ask_question(data: AskRequest):
-    return AskResponse(answer=f"You asked: {data.question}")
+    context = get_page_extract(data.question.title())
+    return AskResponse(answer=f"Wiki says: {context}")
