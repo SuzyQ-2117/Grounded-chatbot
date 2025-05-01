@@ -100,4 +100,6 @@ INFO:     Application startup complete.
 
 Each time you save any changes to the app code, this command ensures that the backend app is automatically reloaded to implement your changes. Do not close the terminal window you used to run this command as this will terminate the app. 
 
+The FastAPI package automatically generates documentation for you based on your endpoints. You can [check out the docs for this app here](localhost:8000/docs).
+
 To safely exit the app, use `CTRL+C` in the terminal window to stop the app from running. 
