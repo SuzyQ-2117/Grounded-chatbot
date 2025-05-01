@@ -26,7 +26,7 @@ def get_page_extract(title: str) -> str:
         soup = BeautifulSoup(raw_html, "html.parser")
 
         paragraphs = soup.findAll("p")
-        print(f"Found {paragraphs} paragraphs")
+        # print(f"Found {paragraphs} paragraphs")
 
         for p in soup.find_all("p"):
             text = p.get_text(strip=True)
