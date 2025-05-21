@@ -12,7 +12,17 @@ from app.models import AskRequest, AskResponse
 from app.wiki import get_page_extract
 from app.openai_utils import generate_answer
 
-app = FastAPI()
+from fastapi import FastAPI
+
+app = FastAPI(
+    title="Grounded Chatbot API",
+    description="A FastAPI-powered service that answers questions about the game *Grounded* using context pulled from the Fandom wiki.",
+    version="0.1.0",
+    contact={
+        "name": "Suzy",
+        "url": "https://github.com/SuzyQ-2117/grounded-chatbot"
+    }
+)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=['*'],
