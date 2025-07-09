@@ -105,4 +105,10 @@ The FastAPI package automatically generates documentation for you based on your 
 To safely exit the app, use `CTRL+C` in the terminal window to stop the app from running. 
 
 
-Making a test push to see if the workflow runs properly - final test push hopefully
+# Making code changes
+
+## release-please
+This repo utilises the release-please workflow to manage automatic semantic versioning. This is authored by a GitHub App that I have created that authenticates via the GitHub API. The documentation for release-please can be found [here](https://github.com/googleapis/release-please).
+
+## Commitizen
+This repo is Commitizen-friendly. For more info about Commitizen, see the docs [here](https://commitizen-tools.github.io/commitizen/).
