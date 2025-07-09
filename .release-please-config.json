@@ -1,8 +1,13 @@
 {
   "packages": {
-    "backend": {
+    "backend/app": {
+      "release-type": "python",
+      "package-name": "grounded-chatbot-backend",
       "path": "backend/app",
-      "release-type": "python"
+      "version-file": {
+        "path": "backend/app/pyproject.toml",
+        "type": "python"
+      }
     }
   }
 }
