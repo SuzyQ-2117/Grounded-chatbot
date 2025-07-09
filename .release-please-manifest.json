@@ -4,8 +4,12 @@
             "component": "backend-app",
             "package-name": "grounded-chatbot-backend",
             "path": "backend/app",
-            "release-type": "python"
-        }
-    },
-    ".": "1.0.1"
+            "release-type": "python",
+            "version-file": {
+                "path": "backend/app/version.txt",
+                "type": "plain-text"
+            }
+        },
+        ".": "1.0.1"
+    }
 }
