@@ -1,7 +1,8 @@
 {
-    "packages": {
-        ".": {
-            "manifest": true
-        }
+  "packages": {
+    "backend": {
+      "path": "backend/app",
+      "release-type": "python"
     }
+  }
 }
