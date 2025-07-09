@@ -1,6 +1,6 @@
 [project]
 name = "grounded-chatbot-backend"
-version = "0.1.0"
+version = "1.1.2"
 description = "Backend for Grounded Chatbot"
 authors = [{ name = "SuzyQ", email = "153325350+SuzyQ-2117@users.noreply.github.com" }]
 dependencies = []
