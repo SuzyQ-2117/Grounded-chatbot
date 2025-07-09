@@ -35,4 +35,5 @@ app.add_middleware(
 def ask_question(question: str = Query(...)):
     context = get_page_extract(question.title())
     gpt_response = generate_answer(question, context)
+    print("LOLZ this is a print statement")
     return AskResponse(answer=gpt_response)
