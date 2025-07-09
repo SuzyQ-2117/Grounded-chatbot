@@ -9,8 +9,6 @@
                 "path": "backend/app/version.txt",
                 "type": "plain-text"
             }
-        },
-        ".": "1.0.1"
-    },
-    ".": "1.1.1"
+        }
+    }
 }
