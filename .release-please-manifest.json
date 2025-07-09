@@ -1,10 +1,11 @@
 {
-    "packages": {
-        "backend/app": {
-            "component": "backend-app",
-            "package-name": "grounded-chatbot-backend",
-            "path": "backend/app",
-            "release-type": "python"
-        }
+  "packages": {
+    "backend/app": {
+      "component": "backend-app",
+      "package-name": "grounded-chatbot-backend",
+      "path": "backend/app",
+      "release-type": "python",
+      "include-component-in-tag": true
     }
+  }
 }
