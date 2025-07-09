@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.2](https://github.com/SuzyQ-2117/Grounded-chatbot/compare/v1.1.1...v1.1.2) (2025-07-09)
+
+
+### Bug Fixes
+
+* **release-please-manifest.json:** updated manifest ([86beb12](https://github.com/SuzyQ-2117/Grounded-chatbot/commit/86beb12a21b91298e7dc9d36c122d9709bfa5348))
+
+
+### Documentation
+
+* added pyproject.toml and updated manifest ([9e87612](https://github.com/SuzyQ-2117/Grounded-chatbot/commit/9e876125d115325370b370b7e22ee35315c3d2bc))
+* **release-please-manifest.json:** updated manifest ([8cef810](https://github.com/SuzyQ-2117/Grounded-chatbot/commit/8cef81031e247ba5701631ac4325fc1df0b5cc3a))
+* updated config docs ([2e9cf0f](https://github.com/SuzyQ-2117/Grounded-chatbot/commit/2e9cf0f170d16d651d5b24f1902960cfca12ba5a))
+
 ## [1.1.1](https://github.com/SuzyQ-2117/Grounded-chatbot/compare/v1.1.0...v1.1.1) (2025-07-09)
 
 
