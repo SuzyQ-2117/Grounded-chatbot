@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/SuzyQ-2117/Grounded-chatbot/compare/v1.1.0...v1.1.1) (2025-07-09)
+
+
+### Documentation
+
+* **manifest:** updated manifest for custom release file tracking ([cf3c27d](https://github.com/SuzyQ-2117/Grounded-chatbot/commit/cf3c27d329597531a2e90af468232b06ea539806))
+
 ## [1.1.0](https://github.com/SuzyQ-2117/Grounded-chatbot/compare/v1.0.1...v1.1.0) (2025-07-09)
 
 
