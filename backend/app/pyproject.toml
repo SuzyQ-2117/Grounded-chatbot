@@ -1,0 +1,9 @@
+[project]
+name = "grounded-chatbot-backend"
+version = "0.1.0"
+description = "Backend for Grounded Chatbot"
+authors = [{ name = "SuzyQ", email = "153325350+SuzyQ-2117@users.noreply.github.com" }]
+dependencies = []
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
