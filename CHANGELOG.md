@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/SuzyQ-2117/Grounded-chatbot/compare/v1.0.1...v1.1.0) (2025-07-09)
+
+
+### Features
+
+* **main.py:** Added some random print statements ([12e9e0c](https://github.com/SuzyQ-2117/Grounded-chatbot/commit/12e9e0c30f9b41fa1d4e193ceba97817bd38e119))
+
+
+### Documentation
+
+* **version.txt:** Added initial version ([429602b](https://github.com/SuzyQ-2117/Grounded-chatbot/commit/429602bf89bdee7f82b7c6e617d113ceab55eda7))
+
 ## [1.0.1](https://github.com/SuzyQ-2117/Grounded-chatbot/compare/v1.0.0...v1.0.1) (2025-07-09)
 
 
